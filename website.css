@@ -8,6 +8,14 @@ span {
     font-size: 20px;    
 }
 
+hr {
+  border: none;
+  border-top: 2px solid #444;
+  margin: 20px auto;
+  width: 40%;
+  
+}
+
 .pfp { 
     display: flex;
     align-items: center;
@@ -86,4 +94,21 @@ span {
     color: white;
     text-shadow: 1px 1px 4px #1b1b1b;
 }
+.games-text2 {
+    font-size: 9px;
+    position: absolute;
+    text-align: center;
+    top: 85%;
+    left: 85%;
+    transform: translate(-50%, -50%);
+}
 
+.links-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.links-header span {
+    font-size: 30px;
+    font-weight: bold;
+}
