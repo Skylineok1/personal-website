@@ -15,6 +15,17 @@ hr {
   width: 40%;
   
 }
+header {
+    background-color: #1b1b1b;
+    display: flex;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+}
+.hamburger {
+    background-color: #1b1b1b;
+    border: none;
+}
 
 .pfp { 
     display: flex;
@@ -43,8 +54,9 @@ hr {
     z-index: 1;
 }
 .pfptext span{
+    flex: 0 1 200px;
     margin-left: 30px;
-    display: block;
+    display: flex;
 }
 .pfpname {
     margin-top: -25px;
@@ -54,6 +66,14 @@ hr {
 .pfpdesc {
     font-size: 20px;
     color: #877fca;
+}
+
+.gamesuid {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
 .gamesheader {
@@ -70,7 +90,6 @@ hr {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 12px;
 }
 
 .games-wrapper {
@@ -111,4 +130,29 @@ hr {
 .links-header span {
     font-size: 30px;
     font-weight: bold;
+}
+
+
+@media (max-width: 600px) {
+    .pfp-img-wrapper {
+        width: 150px;
+        height: 150px;
+        margin-bottom: 50px;
+        margin-right: -10px;
+    }
+    .pfpshape {
+        width: 150px;
+        height: 150px;
+    }
+    .pfpimg {
+        width: 150px;
+        height: 150px;
+    }
+    .pfpname {
+        margin-top: -50px;
+        font-size: 40px;
+    }
+    .pfpdesc {
+        font-size: 16px;
+    }
 }
